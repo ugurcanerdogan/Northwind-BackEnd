@@ -10,7 +10,7 @@ namespace ConsoleUI
         static void Main(string[] args)
         {
             //Data Transformation Object
-            ProductTest();
+            //ProductTest();
             //CategoryTest();
         }
 
@@ -28,7 +28,7 @@ namespace ConsoleUI
             ProductManager productManager = new ProductManager(new EfProductDal());
             foreach (var product in productManager.GetProductDetails())
             {
-                Console.WriteLine(product.ProductName + " / " + product.CategoryName);
+                Console.WriteLine(product.ProductName + " .../ " + product.CategoryName);
             }
         }
     }
