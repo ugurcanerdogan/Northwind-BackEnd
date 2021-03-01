@@ -33,7 +33,7 @@ namespace DataAccess.Concrete.InMemory
         public void Delete(Product product)
         {//LINQ-Lambda
             Product productToDelete = null;
-            productToDelete = _products.SingleOrDefault(p=>p.ProductId==product.ProductId);
+            productToDelete = _products.SingleOrDefault(p => p.ProductId == product.ProductId);
             _products.Remove(productToDelete);
         }
 
